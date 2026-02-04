@@ -25,7 +25,7 @@ jobs:
         run: npm run build
         env:
           # 중요: 아직 백엔드 주소가 없어서 일단 비워둠. 나중에 EC2 만들면 채울 거야!
-          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+          #VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
 
       - name: Configure AWS Credentials (AWS 로그인)
         uses: aws-actions/configure-aws-credentials@v1
